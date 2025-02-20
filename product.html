@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREENDEN</title>
+</head>
+<body>
+    
+    <div class="flex justify-between bg-green-200 p-3 text-gray-600  items-center shadow-xl sticky  ">
+        <h1 class="text-2xl">
+            GREENDEN
+        </h1>
+
+        <!-- <i class="fa-solid fa-bars sm:hidden "></i> -->
+           
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="size-6 h-6 w-6 md:hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+
+       <ul class=" hidden gap-5  md:flex  ">
+            <li> <a class="hover:underline hover:text-black " href="./index.html">Home</a> </li>
+            <li> <a class="hover:underline hover:text-black" href="./product.html">products</a> </li>
+            <li><a class="hover:underline  hover:text-black" href="./contact.html">Contact</a> </li>
+        </ul>
+
+    </div><br>
+         <!--Side Navbar-->
+      <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%;height: 100vh;right: -50%;">
+        <div class="text-right p-5">
+             <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./index.html"> Home</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./product.html"> Products</a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="./contact.html"> Contact</a>
+            </li>
+
+        </ul>
+    </section>
+
+
+    <div class=" text-center">
+           <h1 class="font-bold text-4xl">Our Products</h1>
+           <br>
+        <input id="search" class="border border-black  mb-5  w-96 p-1" type="search" placeholder="Search for a product"> <br>
+         
+        </div>
+        <br>
+
+    <div id="product-container" class=" grid grid-cols-2 md:grid-cols-4">
+        <div class="text-center ">
+            <img src="./Images/bestseller3.jpg"
+                class=" inline hover:shadow-2xl cursor-pointer hover:transform  hover:translate-y-2" alt="">
+            <p>rose Plant</p>
+            <p>$20</p>
+        </div>
+
+        <div class="text-center">
+            <img src="./Images/bestseller4.jpg"
+                class=" inline cursor-pointer hover:shadow-xl hover:transform hover:translate-y-2" alt="">
+            <p>Lily Plant</p>
+            <p>$20</p>
+        </div>
+
+        <div class=" text-center">
+            <img class=" inline  cursor-pointer hover:shadow-xl hover:transform hover:translate-y-2"
+                src="./Images/bestseller2.jpg ">
+            <p>Hibiscus Plant</p>
+            <p>$20</p>
+        </div>
+
+        <div class="text-center">
+            <img class="inline  cursor-pointer hover:shadow-xl hover:transform hover:translate-y-2"
+                src="./Images/bestseller1.jpg">
+            <p>New pet Plant</p>
+            <p>$20</p>
+        </div>
+
+    </div>
+    <br>
+
+    <div class=" grid grid-cols-2 md:grid-cols-4">
+        <div class="text-center ">
+            <img src="./Images/bestseller1.jpg"
+                class=" inline hover:shadow-2xl cursor-pointer hover:transform  hover:translate-y-2" alt="">
+            <p>Rose Plant</p>
+            <p>$20</p>
+        </div>
+
+        <div class="text-center">
+            <img src="./Images/bestseller2.jpg"
+                class=" inline cursor-pointer hover:shadow-xl hover:transform hover:translate-y-2" alt="">
+            <p>Lily Plant</p>
+            <p>$20</p>
+        </div>
+
+        <div class=" text-center">
+            <img class=" inline  cursor-pointer hover:shadow-xl hover:transform hover:translate-y-2"
+                src="./Images/bestseller3.jpg" alt="">
+            <p>Money  Plant</p>
+            <p>$20</p>
+        </div>
+
+        <div class="text-center">
+            <img class="inline  cursor-pointer hover:shadow-xl hover:transform hover:translate-y-2"
+                src="./Images/bestseller4.jpg" alt="">
+            <p>Jasmine Plant</p>
+            <p>$20</p>
+        </div>
+
+    </div>
+    <br>
+
+
+
+
+    <div class="bg-green-100 flex flex-col gap-10 p-10" >
+        <h1 class="font-bold text-4xl"> GREENDEN</h1>
+        <p>  Facere minima alias esse quisquam, voluptatibus sint. Quos cumque </p>
+        <p> @ 2024 Greenday.com</p>
+
+      </div>
+ <script src="product.js"></script>
+    
+</body>
+</html>
